@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(17, 51, 165, 0.7),
+    rgba(17, 51, 165, 0.7)),url(https://rropl.com/wp-content/uploads/2020/06/white.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 40px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 13;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(112, 135, 189, 0.7);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.course p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background-color: rgba(155, 176, 226, 0.7);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px, 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col p{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.woc-showcased{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.woc-showcased-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.woc-showcased-col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(112, 135, 189, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.layer p{
+    width: 100%;
+    font-weight: 300;
+    color: #fff;
+    font-size: 13px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover p{
+    bottom: 40%;
+    opacity: 1;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;   
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.sub-header{
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(17, 51, 165, 0.7),
+    rgba(17, 51, 165, 0.7)), url(https://rropl.com/wp-content/uploads/2020/06/white.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 20px;
+    font-size: 32px;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 40%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 125%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.work-para{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.table{
+    flex-basis: 32%;
+}
+.table h3{
+    background: #3359d7;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.table div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
